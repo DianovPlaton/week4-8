@@ -9,7 +9,7 @@ const connectToDatabase = require("./database/connect")
 const app = express();
 const cors = require("./CORS/cors");
 connectToDatabase();
-app.use(cookieParser(),bodyParser.json(), pagesRouter, apiRouter, express.static(path.join(__dirname, 'public'))); 
+app.use(cors, cookieParser(),bodyParser.json(), pagesRouter, apiRouter, express.static(path.join(__dirname, 'public'))); 
      
 app.listen(PORT, () => {
   console.log(`Server is running at PORT http://localhost:${PORT}`);
