@@ -1,5 +1,7 @@
 
-const allowedCors = ["https://yandex-pindie-front.nomorepartiesco.ru"];
+const allowedCors = ["https://yandex-pindie-front.nomorepartiesco.ru",
+    "https://yandex-pindie.nomorepartiesco.ru"
+];
 
 function cors(req, res, next) {
   const { origin } = req.headers;
