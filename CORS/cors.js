@@ -1,6 +1,8 @@
 
 const allowedCors = ["https://yandex-pindie-front.nomorepartiesco.ru",
-    "https://yandex-pindie.nomorepartiesco.ru"
+    "https://yandex-pindie.nomorepartiesco.ru",
+    "http://localhost:3000",
+    "http://localhost:3001"
 ];
 
 function cors(req, res, next) {
